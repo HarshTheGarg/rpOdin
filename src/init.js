@@ -1,10 +1,12 @@
 export default function pageLoad(){
     
+    addHeader();
+
     const content = document.createElement('div');
     content.setAttribute('id', 'content');
     document.body.appendChild(content);
 
-    addHeader();
+    addFooter();
 
 };
 
@@ -37,6 +39,18 @@ function addHeader() {
 
     header.appendChild(tabs);
 
-    document.querySelector('#content').appendChild(header);
+    document.body.appendChild(header);
+
+}
+
+function addFooter() {
+
+    const footer = document.createElement('footer');
+    
+    const span = document.createElement('span');
+    span.textContent = 'By Harsh Garg';
+    footer.appendChild(span);
+
+    document.body.appendChild(footer);
 
 }

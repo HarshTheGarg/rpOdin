@@ -35,3 +35,13 @@ header {
     margin-right: var(--headerGaps);
     cursor: pointer;
 }
+
+footer {
+    background-color: #faebd7;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.5em;
+}
